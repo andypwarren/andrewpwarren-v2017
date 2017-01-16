@@ -1,0 +1,72 @@
+//
+// Variables
+// --------------------------------------------------
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+@gray-dark:             #888888;
+@gray:                  #dddddd;
+@gray-light:            #f0f0f0;
+
+@black:                 #414141;
+@white:                 #ffffff;
+
+@blue:                  rgb(000, 127, 168);
+@light-blue:            rgb(024, 191, 244);
+@yellow:                rgb(244, 229, 012);
+@orange:                rgb(247, 147, 030);
+
+//bootstrap brand colours
+@brand-primary:         @blue;
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+@font-family-sans-serif:  'Raleway', sans-serif;;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+
+@font-size-base:          16px;
+@font-size-large:         ceil(@font-size-base * 1.17); // ~20px
+@font-size-small:         floor(@font-size-base * 0.88); // ~14px
+
+@font-size-h1:            floor(@font-size-base * 2.8); // ~44px
+@font-size-h2:            floor(@font-size-base * 2); // ~32px
+@font-size-h3:            floor(@font-size-base * 1.4); // ~22px
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base:        22/16; // 22/@font-size-base
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~24px
+
+@headings-line-height:    1.1111111111;
+@headings-color:          @white;
+@headings-font-weight:    500;
+@headings-margin:         10px;
+
+// Body text color
+@text-color:              @black;
+//** Global textual link color.
+@link-color:            @white;
+//** Link hover decoration.
+@link-hover-decoration: none;
+
+//== Iconography
+//
+//## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
+@icon-size:                 @font-size-h3;
+
+//== Container spacing
+@container-margin-hoz: 10px;
+@container-margin-ver: 30px;
+@desktop-container-margin-hoz: 120px;
+@desktop-container-margin-ver: 30px;
+
+//== Time of days vars
+//
+//## specifies variables for dynamic time of day highlighting
+@morning: @yellow;
+@afternoon: @light-blue;
+@evening: @orange;

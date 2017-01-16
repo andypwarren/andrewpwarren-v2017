@@ -1,0 +1,28 @@
+//
+// Time of day specific class/mixins
+// --------------------------------------------------
+.morning {
+    .build-tod-classes(@morning);
+}
+.afternoon {
+    .build-tod-classes(@afternoon);
+}
+.evening {
+    .build-tod-classes(@evening);
+}
+
+.build-tod-classes(@tod: @tod){
+    .highlight {
+        color: @tod;
+    }
+    ::selection {
+        background-color: @tod;
+        color: @white;
+    }
+    a:hover {
+        color: @tod;
+        .icons {
+            color: @tod;
+        }   
+    }
+}

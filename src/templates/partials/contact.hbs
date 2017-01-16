@@ -1,0 +1,12 @@
+<div class="contact">
+    <ul>
+        {{#each data.contact}}
+        <li>
+            <a href="{{this.link}}" target="_blank">
+                <span class="icons icon-{{this.icon}}"></span>
+                <span class="text">{{this.text}}</span>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</div>

@@ -1,0 +1,18 @@
+title: Andrew Warren
+paragraphs: 
+  - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo neque lacus, a tristique quam porttitor at.  Donec tristique velit ac bibendum malesuada. Cras quis arcu nec nunc posuere sagittis ac a ligula. Ut accumsan metus nec molestie rhoncus. Maecenas vel enim elit. Vivamus eu rhoncus nisl. Proin id ante id augue pharetra mollis. Aliquam rutrum, lorem efficitur luctus aliquet, enim neque suscipit justo, non accumsan dolor libero ut elit. Cras vehicula laoreet volutpat. Donec sem nulla, commodo non mollis non, ornare vitae risus.
+  - Pellentesque nec odio ac enim egestas hendrerit vitae sit amet ligula. Etiam felis ante, mattis et enim non, mattis lacinia elit. Pellentesque sit amet elit enim. Donec nec maximus diam, ut suscipit mi. Integer vel accumsan lectus. Donec ut neque scelerisque, maximus diam at, facilisis arcu. Cras dui dui, placerat ut maximus vitae, imperdiet in quam.
+  - Vestibulum fringilla risus est, quis posuere erat ultrices tempor. Duis commodo facilisis euismod. Pellentesque tempus nibh eget velit tempus, at mollis dui rhoncus. Curabitur commodo lacinia neque, et malesuada sapien hendrerit sit amet. Quisque in dignissim risus. Aliquam quis lorem at lorem ultrices suscipit et nec sapien. Praesent placerat ultrices nunc id vehicula. Donec id sem non ipsum imperdiet fringilla eu sit amet turpis.
+contact: 
+  cv: 
+    text: Check out my cv
+    link: ./docs/andrew-warren-cv.pdf
+    icon: cv
+  email:
+    text: Talk to me
+    link: mailto:mail@andrewpwarren.co.uk
+    icon: email
+  linkedin:
+    text: Connect with me
+    link: https://www.linkedin.com/in/andrewpwarren
+    icon: linkedin
