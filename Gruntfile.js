@@ -108,6 +108,14 @@ module.exports = function(grunt) {
                     src: ['**/*', '*'],
                     dest: '<%= config.dist %>/docs/'
                 }]
+            },
+            img: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= config.src %>/assets/img',
+                    src: ['**/*', '*'],
+                    dest: '<%= config.dist %>/img/'
+                }]
             }
         },
 
@@ -146,7 +154,36 @@ module.exports = function(grunt) {
                 ],
                 dest: '<%= config.dist %>/js/app.js'
             }
-        }
+        },
+
+        //try to get the aws keys from keys file for local deployment
+        //otherwise use env vars for CI/CD pipeline
+        aws: function() {
+            try {
+                return grunt.file.readJSON('aws-keys.json')
+            } catch (e) {
+                return {
+                    'AWSAccessKeyId': process.env.AWS_S3_ACCESS_KEY,
+                    'AWSSecretKey': process.env.AWS_S3_SECRET_KEY
+                }
+            }
+        } (),
+
+        aws_s3: {
+            options: {
+                accessKeyId: '<%= aws.AWSAccessKeyId %>', // Use the variables
+                secretAccessKey: '<%= aws.AWSSecretKey %>', // You can also use env variables
+                region: 'eu-west-1',
+                uploadConcurrency: 5, // 5 simultaneous uploads
+                downloadConcurrency: 5, // 5 simultaneous downloads
+                bucket: 'andrewpwarren'
+            },
+            prod: {
+                files: [
+                    { expand: true, cwd: '<%= config.dist %>/', src: ['**'], dest: '/' }
+                ]
+            }
+        },
     });
 
     grunt.loadNpmTasks('grunt-assemble');
@@ -157,6 +194,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-aws-s3');
 
     // Default task(s).
     grunt.registerTask('default', ['server']);
@@ -175,5 +213,6 @@ module.exports = function(grunt) {
     ]);
     grunt.registerTask('server', ['precompile', 'connect:server', 'watch']);
     grunt.registerTask('build', ['precompile', 'assemble']);
+    grunt.registerTask('deploy', ['build', 'aws_s3'])
 
 };
