@@ -212,7 +212,7 @@ module.exports = function(grunt) {
         'assemble'
     ]);
     grunt.registerTask('server', ['precompile', 'connect:server', 'watch']);
-    grunt.registerTask('build', ['precompile', 'assemble']);
+    grunt.registerTask('build', ['precompile']);
     grunt.registerTask('deploy', ['build', 'aws_s3'])
 
 };
