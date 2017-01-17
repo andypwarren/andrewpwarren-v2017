@@ -5,26 +5,7 @@ cache:
   - src/assets/bower_components
 
 stages:
-  - build
   - deploy
-
-# Build
-build_src:
-  stage: build
-  image: node:latest
-  only:
-    - master
-    - develop
-  artifacts:
-    name: "build_${CI_BUILD_REF}"
-    expire_in: 1d
-    paths:
-      - dist/
-  script:
-    - npm install -g bower grunt-cli
-    - npm install
-    - bower install --allow-root
-    - grunt build --env production
 
 # Deploy to Production(S3)
 deploy_prod:
