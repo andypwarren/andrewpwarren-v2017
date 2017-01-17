@@ -6,7 +6,9 @@ module.exports = function(grunt) {
 
         config: {
             src: 'src',
-            dist: 'dist'
+            dist: 'dist',
+            applicationFiles: grunt.file.readJSON('./scripts.json').application,
+            vendorFiles: grunt.file.readJSON('./scripts.json').vendor
         },
 
         assemble: {
@@ -118,6 +120,37 @@ module.exports = function(grunt) {
                 src: ['<%= config.dist %>']
             }
         },
+
+        uglify: {
+            options: {
+                sourceMap: true,
+                sourceMapIncludeSources: true,
+                enclose: { window: 'window' },
+                banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
+                '<%= grunt.template.today(\'yyyy-mm-dd\') %> */\n'
+            },
+            production: {
+                files: {
+                    '<%= config.dist %>/js/app.min.js': ['<%= config.dist %>/js/app.js']
+                }
+            }
+        },
+
+        concat: {
+            options: {
+                sourceMap: true,
+                separator: ';',
+                banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
+                '<%= grunt.template.today(\'yyyy-mm-dd HH:MM\') %> */\n'
+            },
+            production: {
+                src: [
+                    '<%= config.vendorFiles %>',
+                    '<%= config.applicationFiles %>'
+                ],
+                dest: '<%= config.dist %>/js/app.js'
+            }
+        }
     });
 
     grunt.loadNpmTasks('grunt-assemble');
@@ -126,10 +159,20 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-concat');
 
     // Default task(s).
     grunt.registerTask('default', ['server']);
-    grunt.registerTask('precompile', ['clean', 'copy', 'less', 'assemble']);
+
+    grunt.registerTask('precompile', [
+        'clean',
+        'copy',
+        'less',
+        'concat',
+        'uglify',
+        'assemble'
+    ]);
     grunt.registerTask('server', ['precompile', 'connect:server', 'watch']);
     grunt.registerTask('build', ['precompile', 'assemble']);
 
