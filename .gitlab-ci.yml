@@ -1,7 +1,6 @@
 # CI Config
 cache:
   paths:
-  - node_modules/
   - src/assets/bower_components
 
 stages:
