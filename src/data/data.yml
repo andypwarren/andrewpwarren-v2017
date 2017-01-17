@@ -6,7 +6,7 @@ paragraphs:
 contact: 
   cv: 
     text: Check out my cv
-    link: ./docs/andrew-warren-cv.pdf
+    link: ./docs/Andrew-Warren-CV.pdf
     icon: cv
   email:
     text: Talk to me
