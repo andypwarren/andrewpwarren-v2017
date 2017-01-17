@@ -1,9 +1,10 @@
 {
     "vendor": [
-
+        "src/assets/bower_components/jquery/dist/jquery.js",
+        "src/assets/bower_components/typed.js/js/typed.js"
     ],
 
     "application": [
-        
+        "src/assets/js/tod.js"
     ]
 }

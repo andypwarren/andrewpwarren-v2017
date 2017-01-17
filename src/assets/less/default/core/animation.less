@@ -1,0 +1,14 @@
+.blinking(@time: @time) {
+  .animation-name(keyframes-blink);
+  .animation-duration(@time);
+  .animation-timing-function(ease-in-out);
+  .animation-iteration-count(infinite);
+}
+
+@keyframes keyframes-blink {.blink-frames()}
+
+.blink-frames () {
+  0% {opacity: 0}
+  50% {opacity: 1}
+  100% {opacity: 0}
+} 

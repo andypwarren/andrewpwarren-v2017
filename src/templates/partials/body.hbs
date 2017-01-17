@@ -1,4 +1,7 @@
-<h1>GOOD <span class="highlight">MORNING</span>, I'M ANDY</h1>
-{{#each data.paragraphs}}
-<p>{{this}}</p>
-{{/each}}
+<span class="h1 header hidden">GOOD <span id="highlight" class="highlight"></span>, ^750I'M ANDY</span>
+<div class="content"> 
+    {{#each data.paragraphs}}
+    <p>{{this}}</p>
+    {{/each}}
+    {{> contact}}
+</div>
