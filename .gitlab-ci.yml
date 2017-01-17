@@ -12,6 +12,11 @@ deploy_prod:
   image: node:latest
   only:
     - master
+  artifacts:
+    name: "build_${CI_BUILD_REF}"
+    expire_in: 1d
+    paths:
+      - dist
   script:
     - npm install -g bower grunt-cli
     - npm install
