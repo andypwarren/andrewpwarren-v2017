@@ -13,7 +13,6 @@ module.exports = function(grunt) {
 
         assemble: {
             options: {
-                engine: 'Handlebars',
                 flatten: true,
                 assets: '<%= config.dist %>/assets',
                 data: '<%= config.src %>/data/*.{json,yml}',
