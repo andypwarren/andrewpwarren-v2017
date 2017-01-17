@@ -19,6 +19,6 @@ deploy_prod:
       - dist
   script:
     - npm install -g bower grunt-cli
-    - npm install
+    - npm install --force
     - bower install --allow-root
     - grunt deploy
