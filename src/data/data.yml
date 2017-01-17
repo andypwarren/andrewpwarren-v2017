@@ -16,3 +16,11 @@ contact:
     text: Connect with me
     link: https://www.linkedin.com/in/andrewpwarren
     icon: linkedin
+  github:
+    text: See what I've been up to on github
+    link: https://github.com/AndyPWarren
+    icon: github
+  gitlab:
+    text: and Gitlab
+    link: https://git.spectrakey.co.uk/andywarren
+    icon: gitlab
