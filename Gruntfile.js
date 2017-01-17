@@ -71,15 +71,11 @@ module.exports = function(grunt) {
             },
             javascript: {
                 files: [
-                    'app/data/*.json',
-                    'app/data/**/*.json',
-                    'app/data/**/**/*.json',
-
-                    'app/components/*.js',
-                    'app/components/**/*.js',
-                    'app/components/**/**/*.js',
+                    '<%= config.src %>/assets/js/*.js',
+                    '<%= config.src %>/assets/js/**/*.js',
+                    '<%= config.src %>/assets/js/**/**/*.js',
                 ],
-                tasks: ['jshint', 'test:unit:development']
+                tasks: ['minify']
             },
         },
 
@@ -165,12 +161,16 @@ module.exports = function(grunt) {
     // Default task(s).
     grunt.registerTask('default', ['server']);
 
+    grunt.registerTask('minify', [
+        'concat',
+        'uglify',
+    ]);
+
     grunt.registerTask('precompile', [
         'clean',
         'copy',
         'less',
-        'concat',
-        'uglify',
+        'minify',
         'assemble'
     ]);
     grunt.registerTask('server', ['precompile', 'connect:server', 'watch']);
