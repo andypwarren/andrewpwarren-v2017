@@ -1,3 +1,5 @@
+'use strict';
+
 var applyText = function(text){
     $('.highlight').html(text);
 }
@@ -27,6 +29,7 @@ var setHeaderText = function(visited){
 var run = function(){
     var range = TodModule.getRange();
     applyText(range.text);
+    AdjModule.applyAdjective();
     applyStyle(range.cssClass);
     setHeaderText(CookieModule.readVisitedCookie());
     $('.header').typed({

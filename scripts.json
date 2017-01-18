@@ -7,6 +7,7 @@
     "application": [
         "src/assets/js/CookieModule.js",
         "src/assets/js/TodModule.js",
+        "src/assets/js/AdjModule.js",
         "src/assets/js/main.js"
     ]
 }
