@@ -5,6 +5,8 @@
     ],
 
     "application": [
-        "src/assets/js/tod.js"
+        "src/assets/js/CookieModule.js",
+        "src/assets/js/TodModule.js",
+        "src/assets/js/main.js"
     ]
 }
