@@ -175,7 +175,7 @@ module.exports = function(grunt) {
                 region: 'eu-west-1',
                 uploadConcurrency: 5, // 5 simultaneous uploads
                 downloadConcurrency: 5, // 5 simultaneous downloads
-                bucket: 'andrewpwarren'
+                bucket: 'andrewpwarren.co.uk'
             },
             prod: {
                 files: [
