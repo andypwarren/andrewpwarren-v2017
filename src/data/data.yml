@@ -1,10 +1,10 @@
 title: Andrew Warren
 paragraphs: 
   - I’m a Web Developer and Technologist. 
-  - I’ve always had an interest in technology and computing and two years ago, I embarked on a programming career that’s been an exciting journey so far. Whether I’m creating products and tools that make life that little bit easier or unlocking the secrets of a dataset. I relish the chance to solve a complex problem.
-  - Initially inspired by undertaking a programming centric final major project for my Music Technology degree. I turned to the web, as a stage to expand my knowledge, allowing me to couple my creativity with technicality. 
+  - I’ve always had an interest in technology and computing and two years ago, I embarked on a programming career that’s been an exciting journey so far. Whether I’m creating products and tools that make life that little bit easier or unlocking the secrets of a dataset, i relish the chance to solve a complex problem.
+  - Initially inspired by undertaking a programming centric final major project for my Music Technology degree, I turned to the web, as a stage to expand my knowledge, allowing me to couple my creativity with technical interests. 
   - Working for smaller companies has given me insight into the priorities and challenges a project is faced with. It is essential for projects to be maintainable and writing modular, testable code using test-driven principles is one way I try and achieve this balance. Deploying code quickly and reliably also plays a large factor and I am currently using a combination of Docker, Git, GitLab and AWS to accomplish this.
-  - The web is an ever-changing landscape, keeping up with its fast-paced nature is essential. I am currently researching and exploring functional programing paradigms and I’m interested in seeing how these are applied in the JavaScript oriented language Elm. What excites me in the future? I think VR has the potential to play a large part in how we consume information. It will provide companies with a new platform to offer tangible and stimulating user experiences. 
+  - The web is an ever-changing landscape so keeping up with its fast-paced nature is essential. I am currently researching and exploring functional programing paradigms and I’m interested in seeing how these are applied in the JavaScript oriented language Elm. What excites me in the future? I think VR has the potential to play a large part in how we consume information. It will provide companies with a new platform to offer tangible and stimulating user experiences. 
   - I am currently on the lookout for new and exciting opportunities and challenges, so if you are interested in hiring me, check out the following links
 
 contact: 
@@ -24,7 +24,7 @@ contact:
     text: See what I've been up to on github
     link: https://github.com/AndyPWarren
     icon: github
-  gitlab:
-    text: and Gitlab
-    link: https://git.spectrakey.co.uk/andywarren
-    icon: gitlab
+  # gitlab:
+  #   text: and Gitlab
+  #   link: https://git.spectrakey.co.uk/andywarren
+  #   icon: gitlab
