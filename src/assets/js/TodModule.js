@@ -6,19 +6,19 @@ var TodModule = (function () {
         {
             start: 0,
             end: 12,
-            text: 'MORNING',
+            text: 'morning',
             cssClass: 'morning' 
         },
         {
             start: 12,
             end: 18,
-            text: 'AFTERNOON',
+            text: 'afternoon',
             cssClass: 'afternoon' 
         },
         {
             start: 18,
             end: 24,
-            text: 'EVENING',
+            text: 'evening',
             cssClass: 'evening' 
         }
     ]

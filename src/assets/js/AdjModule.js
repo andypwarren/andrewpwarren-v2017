@@ -1,9 +1,9 @@
 'use strict';
 var AdjModule = (function () { 
     var adjs = [
-        "LOVELY",
-        "DELIGHTFUL",
-        "SPLENDID"
+        "lovely",
+        "delightful",
+        "splendid"
     ];
 
     var rndItemInArray = function(arr){
