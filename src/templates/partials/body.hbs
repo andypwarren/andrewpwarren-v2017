@@ -8,16 +8,16 @@
         {{/each}}
     </div>
     
-    <p>I'm currently working with:</p>
+    <p>{{data.tech.intro}}</p>
     <ul class="list-inline">
-    {{#each data.tech}}
+    {{#each data.tech.items}}
         <li class="label label-primary">{{this}}</li>
     {{/each}}
     </ul>
 
-    <p>Tools I use include:</p>
+    <p>{{data.tools.intro}}</p>
     <ul class="list-inline">
-    {{#each data.tools}}
+    {{#each data.tools.items}}
         <li class="label label-primary">{{this}}</li>
     {{/each}}
     </ul>

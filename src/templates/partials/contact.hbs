@@ -1,7 +1,7 @@
 <div class="contact">
-    <p>{{data.pre-contact}}</p>
+    <p>{{data.contact.intro}}</p>
     <ul>
-        {{#each data.contact}}
+        {{#each data.contact.items}}
         <li>
             <a href="{{this.link}}" target="_blank">
                 <span class="icons icon-{{this.icon}}"></span>
