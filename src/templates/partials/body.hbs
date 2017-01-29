@@ -2,8 +2,24 @@
 <span id="previous-vistor" class="h2 hidden">
     Welcome back, I'm Andy. ^750I hope you're having a <span id="adjective"></span> ^750<span id="highlight" class="highlight"></span></span>
 <div class="content"> 
-    {{#each data.paragraphs}}
-        <p>{{this}}</p>
+    <div class="text">
+        {{#each data.paragraphs}}
+            <p>{{this}}</p>
+        {{/each}}
+    </div>
+    
+    <p>I'm currently working with:</p>
+    <ul class="list-inline">
+    {{#each data.tech}}
+        <li class="label label-primary">{{this}}</li>
     {{/each}}
+    </ul>
+
+    <p>Tools I use include:</p>
+    <ul class="list-inline">
+    {{#each data.tools}}
+        <li class="label label-primary">{{this}}</li>
+    {{/each}}
+    </ul>
     {{> contact}}
 </div>

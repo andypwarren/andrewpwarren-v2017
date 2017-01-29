@@ -4,11 +4,11 @@
     "I’m a Web Developer, Technologist and Adventurer.",
     "I’ve always had an interest in technology and computing and two years ago, I embarked on a programming career. I love making things and relish the chance to solve a problem.",
     "Initially inspired by undertaking a programming centric final major project for my Music Technology degree, I turned to the web, as a stage to expand my knowledge, allowing me to couple my creativity with technical interests.",
-    "Working for smaller companies has given me insight into the priorities and challenges a project is faced with. Writing maintainable, modular and testable code is critical for a projects success.",
-    "I’m currently working with: JavaScript, TypeScript, Angular, NodeJS and Java.",
-    "Tools I use include: Git, Gitlab, NPM, Grunt, Docker and AWS.",
-    "Interested in hiring me? Check out the following links:"
+    "Working for smaller companies has given me insight into the priorities and challenges a project is faced with. Writing maintainable, modular and testable code is critical for a projects success."
   ],
+  "tech": ["JavaScript", "TypeScript", "Angular", "NodeJS", "Java"],
+  "tools": ["Git", "Gitlab", "NPM", "Grunt", "Docker", "AWS"],
+  "pre-contact": "Interested in hiring me? Check out these links:",
   "contact": [
     {
       "text": "Check out my cv",
