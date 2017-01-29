@@ -6,7 +6,7 @@
     "Initially inspired by undertaking a programming centric final major project for my Music Technology degree, I turned to the web, as a stage to expand my knowledge, allowing me to couple my creativity with technical interests.",
     "Working for smaller companies has given me insight into the priorities and challenges a project is faced with. Writing maintainable, modular and testable code is critical for a projects success."
   ],
-  "tech": ["JavaScript", "TypeScript", "Angular", "NodeJS", "Java"],
+  "tech": ["HTML", "CSS", "LESS", "JavaScript", "TypeScript", "Angular", "NodeJS", "Java"],
   "tools": ["Git", "Gitlab", "NPM", "Grunt", "Docker", "AWS"],
   "pre-contact": "Interested in hiring me? Check out these links:",
   "contact": [
@@ -14,15 +14,18 @@
       "text": "Check out my cv",
       "link": "./docs/Andrew-Warren-CV.pdf",
       "icon": "cv"
-    },{
+    },
+    {
       "text": "Talk to me",
       "link": "mailto:mail@andrewpwarren.co.uk",
       "icon": "email"
-    },{
+    },
+    {
       "text": "Connect with me",
       "link": "https://www.linkedin.com/in/andrewpwarren",
       "icon": "linkedin"
-    },{
+    },
+    {
       "text": "See what I've been up to on github",
       "link": "https://github.com/AndyPWarren",
       "icon": "github"
