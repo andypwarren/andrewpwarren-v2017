@@ -7,15 +7,9 @@
     "Working for smaller companies has given me insight into the priorities and challenges a project is faced with. Writing maintainable, modular and testable code is critical for a projects success."
   ],
   "tech": {
-    "intro": "I'm currently working with:",
-    "items": ["HTML", "CSS", "LESS", "JavaScript", "TypeScript", "Angular", "NodeJS", "Java"]
-  },
-  "tools": {
-    "intro": "Tools I use include:",
-    "items": ["Git", "Gitlab", "NPM", "Grunt", "Docker", "AWS"]
+    "items": ["HTML", "CSS", "LESS", "JavaScript", "TypeScript", "Angular", "NodeJS", "Java", "Git", "Gitlab", "NPM", "Grunt", "Docker", "AWS"]
   },
   "contact": {
-    "intro": "Interested in hiring me? Check out these links:",
     "items": [
       {
         "text": "Check out my cv",
