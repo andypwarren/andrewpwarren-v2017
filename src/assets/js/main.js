@@ -36,9 +36,9 @@ var run = function(){
         strings: [$('.header').html()],
         typeSpeed: function(){
             if (CookieModule.readVisitedCookie()) {
-                return 20;
+                return 5;
             } else {
-                return 50;
+                return 25;
             }
         }(),
         cursorChar: '_',
