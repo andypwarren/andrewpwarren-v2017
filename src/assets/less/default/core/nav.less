@@ -1,10 +1,19 @@
 .nav {
+  .navbar {
+    height: @navbar-height;
+  }
   .navbar-brand {
     padding-left: 0;
-    padding-right: 30px;
+    padding-right: 10px;
+    margin-left: 15px;
     font-size: @font-size-h2;
     line-height: @font-size-h2;
   }
+}
+
+.navbar-nav > li > a {
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 //collapse overrides
