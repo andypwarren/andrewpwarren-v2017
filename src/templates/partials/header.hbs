@@ -3,16 +3,12 @@
 </div>
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="center">
-        <!--<div class="navbar-header">
-            <span class="h2 navbar-brand">{{data.title}}</a>
-        </div>-->
         <ul class="nav navbar-nav">
             <li><span class="navbar-brand">{{data.title}}</span></li>
             {{#each data.contact.items}}
             <li>
-                <a href="{{this.link}}" target="_blank">
+                <a href="{{this.link}}" data-toggle="tooltip" title="{{this.text}}" target="_blank">
                     <span class="icons icon-{{this.icon}}"></span>
-                    <!--<span class="text">{{this.text}}</span>-->
                 </a>
             </li>
             {{/each}}
