@@ -34,13 +34,7 @@ var run = function(){
     setHeaderText(CookieModule.readVisitedCookie());
     $('.header').typed({
         strings: [$('.header').html()],
-        typeSpeed: function(){
-            if (CookieModule.readVisitedCookie()) {
-                return 5;
-            } else {
-                return 25;
-            }
-        }(),
+        typeSpeed:  5,
         cursorChar: '_',
         preStringTyped: function() {
             $('.typed-cursor').addClass('animate');

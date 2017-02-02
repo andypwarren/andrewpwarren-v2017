@@ -1,7 +1,12 @@
-<span id="first-time-vistor" class="h1 hidden uppercase">good <span id="highlight" class="highlight"></span>, ^750I'm andy</span>
+<span id="first-time-vistor" class="h2 hidden">
+    Good <span id="highlight" class="highlight"></span>,^100
+    <br>{{data.strap}}
+</span>
 <span id="previous-vistor" class="h2 hidden">
-    Welcome back, I'm Andy. ^250I hope you're having a <span id="adjective"></span> <span id="highlight" class="highlight"></span></span>
-<div class="content"> 
+    Welcome back,^100
+    <br>{{data.strap}}
+</span>
+<div class="content">
     <div class="text">
         {{#each data.paragraphs}}
             <p>{{this}}</p>
@@ -12,7 +17,6 @@
         <li><a href="https://www.linkedin.com/in/andrewpwarren" target="_blank" class="btn btn-primary">See my projects on LinkedIn</a></li>
     </ul>
    
-    
     <ul class="list-inline">
     {{#each data.tech.items}}
         <li class="label label-primary">{{this}}</li>
