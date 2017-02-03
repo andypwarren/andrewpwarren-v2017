@@ -2,10 +2,9 @@
   "title": "Andy Warren",
   "strap": "I'm a self-taught Web Developer and Technologist",
   "paragraphs": [
-    
     "I love making things, crafting solutions across the whole tech stack. I relish the chance to solve a complex problem.",
     "I have worked with small businesses and large groups, and I have insight into the challenges each faces when releasing digital products. I write code that is modular and testable because I know how key it is to a projects success.",
-    "I’m currently on the lookout for new and exciting opportunities and challenges. If you’re interested in hiring me then"
+    "I’m currently on the lookout for new, exciting, opportunities and challenges. If you’re interested in hiring me then"
   ],
   "tech": {
     "items": ["HTML", "CSS", "LESS/SASS", "JavaScript", "TypeScript", "ES6", "Angular", "NodeJS & NPM", "Java", "Git", "Gitlab", "Grunt", "Docker", "AWS", "Python", "Django"]
