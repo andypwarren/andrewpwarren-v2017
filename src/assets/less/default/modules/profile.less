@@ -1,0 +1,34 @@
+@half-profile-img-area: (@profile-img-size + @profile-padding) / 2;
+.profile {
+  position: relative;
+  margin-top: -(@profile-img-size + (@profile-padding * 2) + (@projects-border-width * 2)) / 2;
+
+  .profile-header {
+    position: relative;
+    padding: @profile-padding;
+    border-radius: 100%;
+    margin: auto;
+    width: @profile-img-size + (@profile-padding * 3);
+    border: @white @projects-border-width solid;
+
+    .profile-image {
+      position: relative;
+      background-image: url(../img/profile.jpg);
+      width: @profile-img-size;
+      height: @profile-img-size;
+      border-radius: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      &:after {
+        content: '';
+        position: absolute;
+        height: @profile-img-size;
+        width: @profile-img-size;
+        left: 0;
+        background-color: fade(@brand-primary, 50%);
+        border-radius: 100%;
+      }
+    }
+  }
+}

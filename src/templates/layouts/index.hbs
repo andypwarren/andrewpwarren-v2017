@@ -1,0 +1,29 @@
+--- layout: src/templates/layouts/default.hbs ---
+
+<div class="background">
+    <img class="sr-only" src="../img/landscape6.png">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-7 col-sm-offset-2">
+                <span id="first-time-vistor" class="h2 hidden">
+            Good <span id="highlight" class="highlight"></span>,^100
+                <br>{{data.strap}}
+                </span>
+                <span id="previous-vistor" class="h2 hidden">
+            Welcome back,^100
+            <br>{{data.strap}}
+            </span>
+                <div class="content">
+                    <div class="text">
+                        {{#each data.paragraphs}}
+                        <p>{{this}}</p>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    {{> projects}}
+</div>

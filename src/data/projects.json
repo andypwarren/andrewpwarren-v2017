@@ -1,0 +1,40 @@
+[
+  {
+    "title": "Aucuparia",
+    "slug": "aucuparia",
+    "start": "May 2016",
+    "end": "Nov 2016",
+    "intro": "Website for Aucuparia Consultancy LTD. Working with the small team at SpectraKey to create a visually exciting website for Aucuparia, a park and green space consultancy firm. Using a Django CMS with a REST api to separate content and allow the customer flexibility. This data is consumed client side using AngularJS. Hosted using Docker containers and AWS ECS with Gitlab for repository hosting and CI pipelines.",
+    "text": "",
+    "bgImage": "",
+    "company": "SpectraKey",
+    "link": "http://www.aucuparia.co.uk",
+    "skills": [
+      "HTML",
+      "CSS",
+      "LESS",
+      "AngularJS",
+      "Python",
+      "Django"
+    ]
+  },
+  {
+    "title": "Dashboard App",
+    "slug": "dashboard-app",
+    "start": "May 2016",
+    "end": "Nov 2016",
+    "intro": "Some text",
+    "text": "",
+    "bgImage": "",
+    "company": "SpectraKey",
+    "link": null,
+    "skills": [
+      "HTML",
+      "CSS",
+      "LESS",
+      "AngularJS",
+      "NodeJS",
+      "AWS ECS"
+    ]
+  }
+]

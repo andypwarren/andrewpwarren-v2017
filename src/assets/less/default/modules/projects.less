@@ -1,0 +1,25 @@
+.projects {
+    .project {
+        z-index: 0;
+        &:before {
+            content: "";
+            border-left: solid @projects-border-width white;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            margin-left: -21%;
+            z-index: -1;
+        }
+    }
+    .title {
+        position: relative;
+        &:before {
+            content: "";
+            border-bottom: solid @projects-border-width white;
+            position: absolute;
+            height: 50%;
+            width: 12%;
+            margin-left: -21.6%; 
+        }
+    }
+}

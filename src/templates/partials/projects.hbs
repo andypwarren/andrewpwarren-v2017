@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-sm-3 profile">
+        <div class="profile-header">
+            <div class="profile-image">
+                <img class="sr-only" src="http://placehold.it/100x100">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="projects">
+    {{#each projects}}
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-3 project">
+            <h2 class="title">{{this.title}}</h2>
+            <p>{{this.start}} - {{this.end}}</p>
+            <p>{{this.intro}}</p>
+            <a href="/projects/{{this.slug}}.html" class="btn btn-primary">Read more</a>
+        </div>
+    </div>
+    {{/each}}
+</div>

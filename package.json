@@ -20,6 +20,7 @@
     "grunt-contrib-copy": "1.0.0",
     "grunt-contrib-less": "1.4.0",
     "grunt-contrib-uglify": "2.0.0",
-    "grunt-contrib-watch": "1.0.0"
+    "grunt-contrib-watch": "1.0.0",
+    "lodash": "^4.17.4"
   }
 }

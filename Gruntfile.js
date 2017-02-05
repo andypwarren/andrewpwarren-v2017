@@ -1,4 +1,16 @@
+var _ = require('lodash');
+
 module.exports = function(grunt) {
+
+    function createPages(datasrc, template) {
+        return grunt.file.readJSON(datasrc).map(function(page) {
+            return {
+                filename: page.slug,
+                data: page,
+                content: grunt.file.read(template)
+            }
+        })
+    }
 
     // Project configuration.
     grunt.initConfig({
@@ -16,12 +28,23 @@ module.exports = function(grunt) {
                 flatten: true,
                 assets: '<%= config.dist %>/assets',
                 data: '<%= config.src %>/data/*.{json,yml}',
+                layout: '<%= config.src %>/templates/layouts/default.hbs',
                 partials: '<%= config.src %>/templates/partials/*.hbs'
             },
             site: {
-                src: ['<%= config.src %>/templates/index.hbs'],
+                src: ['<%= config.src %>/templates/layouts/index.hbs'],
                 dest: '<%= config.dist %>/'
             },
+            projects: {
+                options: {
+                    engine: 'handlebars',
+                    layout: 'src/templates/layouts/project-pages.hbs',
+                    pages: createPages('src/data/projects.json', 'src/templates/layouts/project-pages.hbs')
+                },
+                files: [
+                    { dest: '<%= config.dist %>/projects/', src: '!*' }
+                ]
+            }
         },
 
         less: {
