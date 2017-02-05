@@ -6,8 +6,11 @@
 
 .label-primary {
     transition: all .3s;
+    background-color: @white;
+    color: @brand-primary;
+    border: solid 1px @white;
     &:hover {
-        background-color: @white;
-        color: @brand-primary;
+        background-color: darken(@brand-primary, 1%);
+        color: @white;
     }
 }
