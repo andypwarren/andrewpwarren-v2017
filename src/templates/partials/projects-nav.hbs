@@ -1,21 +1,25 @@
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid col-sm-offset-1">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar bar-1"></span>
-        <span class="icon-bar bar-2"></span>
-        <span class="icon-bar bar-3"></span>
-      </button>
-      <a class="navbar-brand uppercase" href="/">{{data.title}}</a>
-    </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-offset-1 col-sm-8">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar bar-1"></span>
+            <span class="icon-bar bar-2"></span>
+            <span class="icon-bar bar-3"></span>
+          </button>
+          <a class="navbar-brand uppercase" href="/">{{data.title}}</a>
+        </div>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="previous"><a href="projects/{{this._pagination.previous}}.html">Previous</a></li>
-        <li class="counter"><span>{{this._pagination.current}} / {{this._pagination.total}}</span></li>
-        <li class="next"><a href="projects/{{this._pagination.next}}.html">Next</a></li>
-      </ul>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="previous"><a href="projects/{{this._pagination.previous}}.html">Previous</a></li>
+            <li class="counter"><span>{{this._pagination.current}} / {{this._pagination.total}}</span></li>
+            <li class="next"><a href="projects/{{this._pagination.next}}.html">Next</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
 </nav>
