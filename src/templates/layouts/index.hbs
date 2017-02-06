@@ -1,26 +1,20 @@
 ---
-layout: src/templates/layouts/default.hbs 
----
+layout: src/templates/layouts/default.hbs
+--- 
 {{> nav}}
-<div class="background">
+<div class="background container-fluid">
     <img class="sr-only" src="../img/landscape6.png">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-7 col-sm-offset-2">
-                <span id="first-time-vistor" class="h1 hidden">
-            Good <span id="highlight" class="highlight"></span>,^100
-                <br>{{data.strap}}
-                </span>
-                <span id="previous-vistor" class="h1 hidden">
-            Welcome back,^100
-            <br>{{data.strap}}
+    <div class="row">
+        <div class="col-sm-7 col-sm-offset-2 page-margin">
+            <span id="first-time-vistor" class="h1 hidden">Good <span id="highlight" class="highlight"></span>
             </span>
-                <div class="reveal">
-                    <div class="text">
-                        {{#each data.paragraphs}}
-                        <p>{{this}}</p>
-                        {{/each}}
-                    </div>
+            <span id="previous-vistor" class="h1 hidden">Welcome back</span>
+            <div class="reveal">
+                <h2>{{data.strap}}</h2>
+                <div class="text">
+                    {{#each data.paragraphs}}
+                    <p>{{{this}}}</p>
+                    {{/each}}
                 </div>
             </div>
         </div>
