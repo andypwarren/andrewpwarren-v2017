@@ -29,7 +29,6 @@ var setHeaderText = function(visited){
 var run = function(){
     var range = TodModule.getRange();
     applyText(range.text);
-    AdjModule.applyAdjective();
     applyStyle(range.cssClass);
     setHeaderText(CookieModule.readVisitedCookie());
     $('.header').typed({
@@ -41,7 +40,7 @@ var run = function(){
             $('.header').removeClass('hidden');
         },
         onStringTyped: function() {
-            $('.content').addClass('show');
+            $('.reveal').addClass('show');
             CookieModule.setVisitedCookie();
             setTimeout(function(){
                 $('.typed-cursor').addClass('hide-op');
