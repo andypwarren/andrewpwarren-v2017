@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="col-sm-8 col-sm-offset-2">
         <ul class="nav navbar-nav">
-            <li><span class="navbar-brand">{{data.title}}</span></li>
+            <li><span class="navbar-brand uppercase">{{data.title}}</span></li>
             {{#each data.contact.items}}
             <li>
                 <a href="{{this.link}}" data-toggle="tooltip" title="{{this.text}}" target="_blank">

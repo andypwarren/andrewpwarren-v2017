@@ -1,12 +1,28 @@
 ---
-layout: src/templates/layouts/default.hbs
+layout: src/templates/layouts/default.hbs 
 ---
-<div class="background" style="background-image: url(../img/{{this.slug}}.png)">
-    <img class="sr-only" src="../img/{{this.slug}}.png">
-    <div class="row">
-        <div class="col-xs-11 col-xs-offset-1 col-md-8 col-md-offset-2">
-            <h1>{{title}}</h1>
-            <p>{{intro}}</p>
+<div class="container-fluid project-page">
+    <section class="row hero">
+        <div class="col-sm-5 col-sm-offset-1">
+            <h1>
+                <a {{#if this.link}}href="{{this.link}}"{{/if}} target="_blank">{{title}}</a>
+            </h1>
+            <h3>{{intro}}</h3>
+            {{#if this.link}}<a class="btn btn-primary" href="{{this.link}}">Check it out</a>{{/if}}
         </div>
-    </div>
+        <div class="col-sm-5">
+            <img class="project-img" src="img/{{this.slug}}.png">
+        </div>
+    </section>
+    <section class="row info">
+        <div class="col-sm-8 col-sm-offset-1">
+        {{{this.text}}}
+            <ul class="list-inline">
+                {{#each this.skills}}
+                <li class="label label-primary">{{this}}</li>
+                {{/each}}
+            </ul>
+        </div>
+    </section>
 </div>
+{{> footer}}

@@ -1,15 +1,17 @@
---- layout: src/templates/layouts/default.hbs ---
-
+---
+layout: src/templates/layouts/default.hbs 
+---
+{{> nav}}
 <div class="background">
     <img class="sr-only" src="../img/landscape6.png">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-7 col-sm-offset-2">
-                <span id="first-time-vistor" class="h2 hidden">
+                <span id="first-time-vistor" class="h1 hidden">
             Good <span id="highlight" class="highlight"></span>,^100
                 <br>{{data.strap}}
                 </span>
-                <span id="previous-vistor" class="h2 hidden">
+                <span id="previous-vistor" class="h1 hidden">
             Welcome back,^100
             <br>{{data.strap}}
             </span>

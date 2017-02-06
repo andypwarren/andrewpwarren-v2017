@@ -1,0 +1,12 @@
+<footer>
+    <ul class="list-inline">
+        <li class="uppercase">{{data.title}}</li>
+        {{#each data.contact.items}}
+        <li>
+            <a href="{{this.link}}" data-toggle="tooltip" title="{{this.text}}" target="_blank">
+                <span class="icons icon-{{this.icon}}"></span>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</footer>
