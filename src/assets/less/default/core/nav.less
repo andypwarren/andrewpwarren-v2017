@@ -3,18 +3,33 @@
   height: @navbar-height;
 }
 .navbar-brand {
+  padding: 0;
   padding-left: 0;
   padding-right: 10px;
   font-size: @font-size-h2;
   line-height: @font-size-h2;
 }
+
 nav li > a {
   padding: 10px 8px;
 }
 
-.navbar-nav > li > a {
-  padding-top: 14px;
-  padding-bottom: 14px;
+.project-page {
+  .navbar-brand {
+    &:hover {
+      background-color: @white;
+    }
+  }
+  .counter {
+    background-color: @white;
+    color: @brand-primary;
+  }
+  li {
+    transition: background-color 0.3s;
+    &:hover {
+      background-color: @white;
+    }
+  }
 }
 
 //collapse overrides
@@ -22,7 +37,7 @@ nav li > a {
   display: block!important;
 }
 
-.navbar-nav>li, .navbar-nav {
+.navbar-nav > li, .navbar-nav {
   float: left !important;
 }
 

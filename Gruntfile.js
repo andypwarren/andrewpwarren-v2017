@@ -3,11 +3,29 @@ var _ = require('lodash');
 module.exports = function(grunt) {
 
     function createPages(datasrc, template) {
-        return grunt.file.readJSON(datasrc).map(function(page) {
+        return grunt.file.readJSON(datasrc).map(function(page, index, self) {
+            var _pagination = {
+                previous: null,
+                next: null,
+                total: self.length,
+                current: index + 1
+            };
+            if (index === 0) {
+                _pagination.previous = self[self.length - 1].slug;
+                _pagination.next = self[index + 1].slug;
+            } else if (index === (self.length - 1)) {
+                _pagination.next = self[0].slug;
+                _pagination.previous = self[index - 1].slug;
+            } else {
+                _pagination.next = self[index + 1].slug;
+                _pagination.previous = self[index - 1].slug;
+            }
+
+            page._pagination = _pagination;
             return {
                 filename: page.slug,
                 data: page,
-                content: grunt.file.read(template)
+                content: grunt.file.read(template),
             }
         })
     }

@@ -1,0 +1,10 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="col-sm-8 col-sm-offset-1">
+        <ul class="nav navbar-nav">
+            <li class="home uppercase"><a class="navbar-brand" href="/">{{data.title}}</a></li>
+            <li class="previous"><a href="projects/{{this._pagination.previous}}.html">Previous</a></li>
+            <li class="counter">{{this._pagination.current}} / {{this._pagination.total}}</li>
+            <li class="next"><a href="projects/{{this._pagination.next}}.html">Next</a></li>
+        </ul>
+    </div>
+</nav>
