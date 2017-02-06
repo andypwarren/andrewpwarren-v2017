@@ -1,7 +1,8 @@
 {
     "vendor": [
         "src/assets/bower_components/jquery/dist/jquery.js",
-        "src/assets/bower_components/typed.js/js/typed.js"
+        "src/assets/bower_components/typed.js/js/typed.js",
+        "src/assets/bower_components/bootstrap/dist/js/bootstrap.js"
     ],
 
     "application": [

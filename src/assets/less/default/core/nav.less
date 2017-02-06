@@ -1,66 +1,29 @@
-nav {
-  height: @navbar-height;
-
-  .navbar-nav {
-    li {
-      height: @navbar-height;
-      transition: background-color 0.3s;
-
-      a, span {
-        padding-top: 12px;
-        padding-bottom: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
-        display: inline-block;
-      }
-
-      &.navbar-brand {
-        padding: 0;
-        font-size: @font-size-h2;
-        a {
-          padding-left: 0;
-        }
-
-        &:hover {
-          background-color: @white;
-        }
-      }
-
-      &:hover {
-        background-color: @white;
-        a {
-          color: @brand-primary;
-        }
-        .icons {
-          color: @brand-primary;
-        }
-      }
-      
-      &.counter {
-        background-color: @white;
-        color: @brand-primary;
-      }
+.navbar {
+  .counter {
+    padding: 10px 14px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    color: @brand-primary;
+    background-color: @white;
+  }
+  .bar-2 {
+    opacity: 1;
+  }
+  .icon-bar {
+    transition: transform .25s, opacity .25s;
+  }
+  .navbar-toggle:not(.collapsed) {
+    .bar-1 {
+      transform: rotateZ(45deg) translate(4px, 4px);
+    }
+    .bar-2 {
+      opacity: 0;
+    }
+    .bar-3 {
+      transform: rotateZ(-45deg) translate(4px, -4px);
     }
   }
-}
-
-//collapse overrides
-.navbar-collapse.collapse {
-  display: block!important;
-}
-
-.navbar-nav > li, .navbar-nav {
-  float: left !important;
-}
-
-.navbar-nav.navbar-right:last-child {
-  margin-right: -15px !important;
-}
-
-.navbar-right {
-  float: right!important;
-}
-
-.navbar-nav {
-  margin: 0px 0px;
+  .navbar-toggle {
+    z-index: 1;
+  }
 }
