@@ -1,6 +1,11 @@
 .projects {
+    > div:last-child {
+        border-bottom: solid @white @projects-border-width;
+    }
     .project {
         z-index: 0;
+        padding-bottom: 30px;
+
         &:before {
             content: "";
             border-left: solid @projects-border-width white;
