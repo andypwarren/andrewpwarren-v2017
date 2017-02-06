@@ -1,14 +1,8 @@
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="col-sm-8 col-sm-offset-2">
         <ul class="nav navbar-nav">
-            <li><span class="navbar-brand uppercase">{{data.title}}</span></li>
-            {{#each data.contact.items}}
-            <li>
-                <a href="{{this.link}}" data-toggle="tooltip" title="{{this.text}}" target="_blank">
-                    <span class="icons icon-{{this.icon}}"></span>
-                </a>
-            </li>
-            {{/each}}
+            <li class="navbar-brand"><a href="/" class="uppercase">{{data.title}}</a></li>
+            <li><a href="#projects">Projects</a></li>
         </ul>
     </div>
 </nav>
