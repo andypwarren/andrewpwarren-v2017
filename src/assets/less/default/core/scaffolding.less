@@ -3,8 +3,14 @@
 // --------------------------------------------------
 a {
   transition: color, background-color 0.3s;
+  &:hover {
+    color: @brand-primary;
+  }
 }
 ::selection {
     background-color: @brand-primary;
     color: @white;
+}
+.page-margin {
+  margin-top: 80px;
 }

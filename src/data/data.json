@@ -1,8 +1,9 @@
 {
   "title": "Andy Warren",
-  "strap": "I'm a self-taught Web Developer and Technologist",
+  "strap": "I'm a Web Developer, Technologist and Adventurer",
   "paragraphs": [
-    "I love making things, crafting solutions across the whole tech stack. I relish the chance to solve a complex problem. I’m currently on the lookout for new, exciting, opportunities and challenges. If you’re interested in hiring me then"
+    "I love making things, crafting solutions across the whole tech stack. I relish the chance to solve a complex problem.",
+    "I’m currently on the lookout for new, exciting, opportunities and challenges. If you’re interested in hiring me, <a href=\"mailto:mail@andrewpwarren.co.uk\"><strong>let's chat</strong></a>"
   ],
   "tech": {
     "items": ["HTML", "CSS", "LESS/SASS", "JavaScript", "TypeScript", "ES6", "Angular", "NodeJS & NPM", "Java", "Git", "Gitlab", "Grunt", "Docker", "AWS", "Python", "Django"]
