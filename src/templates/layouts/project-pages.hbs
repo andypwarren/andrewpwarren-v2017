@@ -12,7 +12,7 @@ layout: src/templates/layouts/default.hbs
             </div>
         </div>
         <div class="col-sm-5">
-            <img class="project-img reveal" src="img/{{this.slug}}.png">
+            {{#if this.image }}<img class="project-img reveal" src="img/{{this.slug}}.png">{{/if}}
         </div>
     </section>
     <section class="row info reveal">
