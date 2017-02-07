@@ -5,7 +5,7 @@
     "start": "May 2016",
     "end": "Nov 2016",
     "image": true,
-    "intro": "I lead the front-end for Aucuparia, a park and green-space consultancy",
+    "intro": "I led the front-end for Aucuparia, a park and green-space consultancy",
     "text": "<p>I worked with the team at SpectraKey to create a portfolio website for Aucuparia Consultancy. The customer needed to be able to iterate over the content quickly, adding projects and experiences on the fly. <br>We opted for a CMS using Python and Django, chosen for it’s simple admin panel and authorization system. This was fronted with Django’s REST api framework, allowing us to separate the concerns of the project. The REST api is consumed on the front-end using AngularJS.</p>",
     "company": "SpectraKey",
     "link": "http://www.aucuparia.co.uk",
@@ -27,7 +27,7 @@
     "end": "Jun 2016",
     "image": true,
     "intro": "Full-stack development of dashboard app for Evident Legal's will writing scheme",
-    "text": "<p>I created a data visualisation tool for a will writing scheme we were launching, at Evident Legal. It offered valuable insight to stakeholders and the markerting team, showing various key performance indicators, so they could make informed decisions on the schemes success.</p><p>It was also used to demonstrate our data collection capabilities to charities in the aquasition stage. This helped us sign 6 leading charities with the scheme set to generate £500,000 in the first year</p><p>The visual output could be filtered by date range and split by daily, weekly and monthly intervals, so we could track the progress of the scheme. It could also be filtered by channel partner, using a SalesForce integration to view data form channels users. I also included the ability to exclude certain users from the report, if they were used for testing or appeared to be spam. I secured the app using Auth0, which offered a simple token based authroization with complex management tools and the abilty to perform simple role based permissions and resource lockdown.</p><p>I built the app using NodeJS on the back-end and AngularJS on the front, allowing me to separate the concerns of the project. DevOps was handled with Docker, Github and CircleCI, for a seamless deployment pipeline and production is handled using AWS Elastic Container Service</p>",
+    "text": "<p>I created a data visualisation tool for a will writing scheme we were launching, at Evident Legal. It offered valuable insight to stakeholders and the marketing team, showing various key performance indicators, so they could make informed decisions on the scheme's success.</p><p>It was also used to demonstrate our data collection capabilities to charities in the acquisition stage. This helped us sign six leading charities with the scheme set to generate £500,000 in the first year.</p><p>The visual output could be filtered by date range and split by daily, weekly and monthly intervals, so we could track the progress of the scheme. It could also be filtered by channel partner, using a SalesForce integration to view data form channels users. I also included the ability to exclude certain users from the report, if they were used for testing or appeared to be spam. I secured the app using Auth0, which offered a simple token based authorization with complex management tools and the ability to perform simple role based permissions and resource lockdown.</p><p>I built the app using NodeJS on the back-end and AngularJS on the front, allowing me to separate the concerns of the project. DevOps was handled with Docker, Github and CircleCI, for a seamless deployment pipeline and production is handled using AWS Elastic Container Service.</p>",
     "company": "Evident Legal",
     "link": null,
     "skills": [
@@ -57,13 +57,13 @@
       "MySQL"
     ]
   },{
-    "title": "Stat Bot",
+    "title": "Stats Bot",
     "slug": "stats-bot",
     "start": "Dec 2016",
     "end": "Jan 2017",
     "image": false,
     "intro": "Slack bot for extracting legacy giving data from Elasticsearch",
-    "text": "<p>After building the distiller, we needed a simple method for creating a report before the visual dashboard was implemented. I created a Slack integration that generates a CSV of the giving data, flattening the data in Elasticsearch. The resulting CSV is then encrypted and uploaded to Slack. I built the app using NodeJS wrapped with TypeScript for increased tooling. It's hosted using AWS Elastic Container Service</p>",
+    "text": "<p>After building the distiller, we needed a simple method for creating a report before the visual dashboard was implemented. I created a Slack integration that generates a CSV of the giving data, by flattening the schema in Elasticsearch, so we could see each gift individually. The resulting CSV is then encrypted and uploaded into Slack. I built the app using NodeJS wrapped with Typescript for increased tooling. It's hosted using AWS elastic container service.</p>",
     "company": "Evident Legal",
     "link": null,
     "skills": [
@@ -80,7 +80,7 @@
     "end": null,
     "image": false,
     "intro": "Experimenting with modernizing elements of our Webapp",
-    "text": "<p>The Webapp, which provided the majority of Evident-Legal's sites, had become rather monolithic. I was tasked with exploring how front-end components could interact with RESTful services. I used AngularJS to rebuild our document storage component</p><p>The document automation system we used was also cumbersome and inflexible. I used Angular2 to dynamically build an interview UI from a RESTful wrapper of the document automation system.</p>",
+    "text": "<p>The Webapp, which provided the majority of Evident-Legal's sites, had become rather monolithic. I was tasked with exploring how front-end components could interact with RESTful services. I used AngularJS to rebuild our document storage component.</p><p>The document automation system we used was also cumbersome and inflexible. I used Angular2 to dynamically build an interview UI from a RESTful wrapper of the document automation system.</p>",
     "company": "Evident Legal",
     "link": null,
     "skills": [
